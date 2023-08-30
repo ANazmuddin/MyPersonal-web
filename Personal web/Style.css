@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #646DB2;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    background-color: #2A2E6D;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+/* Tambahkan gaya untuk halaman aktif */
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+/* Animasi ketika halaman berpindah */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+main {
+    animation: fadeInOut 1s;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    max-width: 150px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
+
+.social-media-links a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #646DB2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-links a:hover {
+    background-color: #2A2E6D;
+}
+
+footer {
+    background-color: #2A2E6D;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* ... (kode CSS sebelumnya tetap sama) */
+.toggle-theme {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.toggle-theme button {
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Gaya untuk tombol Light Mode */
+#lightMode {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Gaya untuk tombol Dark Mode */
+#darkMode {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Gaya untuk Dark Mode */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode header {
+    background-color: #222;
+    color: #646DB2;
+}
+
+.dark-mode nav {
+    background-color: #444;
+}
+
+.dark-mode nav a {
+    color: #2A2E6D;
+}
+
+.dark-mode main {
+    color: #fff;
+}
+
+.dark-mode .image-gallery img:hover {
+    border: 2px solid #fff;
+}
+
+.dark-mode footer {
+    background-color: #222;
+    color: #646464;
+}
